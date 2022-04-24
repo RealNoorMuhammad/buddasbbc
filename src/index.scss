@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lilita+One&display=swap");
+
+@import "./styles/mixins";
+@import "./styles/common.scss";
+@import "./styles/variables";
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+#root {
+  min-height: 100vh !important;
+}
+
+body {
+  color: #fefefe;
+  font-family: "Lilita One", cursive;
+  background: #591dd8;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: Min(100%, var(--container-width));
+  margin: 0 auto;
+  padding: 0 30px;
+
+  &_s {
+    max-width: Min(100%, calc(var(--container-width) - 150px));
+  }
+}
+
+.btn {
+  width: 338px;
+  height: 76px;
+  background: linear-gradient(
+    87.02deg,
+    #ffe600 0%,
+    #ef9020 49.79%,
+    #ef20ce 100%
+  );
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background: #1f172c;
+    color: #fff;
+  }
+
+  @include mobile {
+    font-size: 18px;
+    line-height: 24px;
+    height: 48px;
+    max-width: 229px;
+  }
+
+  &_meta {
+    color: #fff;
+    background: #1f172c;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid var(--secondary-purple);
+  }
+}
+
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 18px;
+
+  &_sub {
+    font-size: 36px;
+    line-height: 48px;
+
+    @include tablet {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  @include tablet {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
