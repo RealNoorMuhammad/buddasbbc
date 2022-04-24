@@ -1,0 +1,17 @@
+:root {
+  // ===== COLORS =========
+  --purple: "#591DD8";
+  --orange: "#FFAE29";
+  --orange-gradient: linear-gradient(
+    87.02deg,
+    #ffe600 0%,
+    #ef9020 49.79%,
+    #ef20ce 100%
+  );
+
+  --main-purple: #9935af;
+  --secondary-purple: #cf67e6;
+
+  // ==== WIDTH =========
+  --container-width: calc(1440px + 60px);
+}
